@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const connectDB = async () => {
   try {
     // Directly use the correct MongoDB URI here
-    await mongoose.connect("mongodb://127.0.0.1:27017/electronic-elections", { 
+    await mongoose.connect("process.envv.DB_URI", { 
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
